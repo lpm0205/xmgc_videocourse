@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>register</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Gardening Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <style>
+        #div01,#div02,#div03{
+            font-size: 4px;height: 30px
+        }
+
+    </style>
+    <script type="text/javascript" src="js/register.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!--/script-->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- header-section-starts -->
+
+
+
+<div class="about-header-banner">
+    <div class="container">
+        <div class="home">
+            <a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div class="header-top">
+            <div class="social-icons">
+                <i class="facebook"><img src="images/wechat.png" ></i>
+                <i class="twitter"><img src="images/qq.png" ></i>
+                <i class="googlepluse"><img src="images/sina.png" ></i>
+            </div>
+            <span class="menu"><img src="images/nav.png" alt=""/></span>
+            <div class="top-menu">
+                <ul>
+                    <nav class="cl-effect-13">
+                        <li><a href="course.html">课程分类</a></li>
+                        <li><a href="index.html">下载</a></li>
+                        <li><a class="scroll" href="#news">我的</a></li>
+                    </nav>
+                </ul>
+            </div>
+            <!-- script for menu -->
+            <script>
+                $( "span.menu" ).click(function() {
+                    $( ".top-menu ul" ).slideToggle( 300, function() {
+                        // Animation complete.
+                    });
+                });
+            </script>
+            <!-- //script for menu -->
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="banner-info text-center">
+            <h1><a href="index.html">css</a></h1>
+        </div>
+    </div>
+</div>
+<!-- header-section-ends -->
+
+
+
+<div id="register">
+    <h2 class="text-center">注册</h2>
+    <form role="form" class="form-horizontal" id="registerform">
+        <div class="form-group">
+            <div class="col-xs-4 control-label">
+                <label for="user" >用户名:</label>
+            </div>
+            <div class="col-xs-4 ">
+                <input type="text" name="txtName" class="form-control " placeholder="请输入用户名" id="user" onfocus="fo1()" onblur="bl1()" >
+            </div>
+            <div id="div01" class="col-xs-2 control-label"></div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-4 control-label">
+                <label for="pwd" >密码:</label>
+            </div>
+            <div class="col-xs-4">
+                <input type="password" name="txtPwd" class="form-control " placeholder="请输入密码" id="pwd" onfocus="fo2()" onblur="bl2()">
+            </div>
+            <div id="div02" class="col-xs-2 control-label" ></div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-4 control-label">
+                <label for="pwd2" >确认密码:</label>
+            </div>
+            <div class="col-xs-4">
+                <input type="password" name="txtPwd1" class="form-control " placeholder="再次输入密码" id="pwd2" onfocus="fo3()" onblur="bl3()">
+            </div>
+            <div id="div03" class="col-xs-2 control-label" ></div>
+        </div>
+        <div class="form-group ">
+            <div class="col-xs-4 control-label">
+                <label for="uSchool" >学校名称:</label>
+            </div>
+            <div class="col-xs-4">
+                <input type="text" name="uSchool" class="form-control " placeholder="请输入学校名称" id="uSchool">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-4 control-label">
+                <label for="uClass" >班级名称:</label>
+            </div>
+            <div class="col-xs-4">
+                <input type="text" name="uClass" class="form-control " placeholder="请输入班级名称" id="uClass">
+            </div>
+        </div>
+        <div class="form-group" >
+            <div class="col-xs-4 control-label" >
+                <label >用户类型:</label>
+            </div>
+            <div class=" col-xs-5">
+                <input type="radio" name="uType" id="uType_1" value="1" checked> 学生
+                <input type="radio" name="uType" id="uType_2" value="0">教师
+            </div>
+        </div>
+        <div class="form-group">
+            <a href="#" class="btn btn-success col-xs-2 col-xs-offset-4" style="width: 50px">注册</a>
+            <a href="#" class="btn btn-warning col-xs-2" style="width: 50px;margin-left: 10px">返回</a>
+        </div>
+    </form>
+</div>
+
+<!-- footer-section -->
+<div class="footer">
+    <div class="container">
+        <div class="copyright text-center">
+            <p>
+                本站点所有权归属于<span class="glyphicon glyphicon-fire"></span>h5小分队
+                <span class="glyphicon glyphicon-fire"></span>团队提供综合支持</p>
+        </div>
+    </div>
+</div>
+<!-- footer-section -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+    });
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!---->
+</body>
+</html>
