@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Gardening Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <style>
+        #remember{
+            position: relative;
+            left: 35%;
+            /*transform: translate();*/
+        }
+        #loginBtn{
+            position: relative;
+            left:60%;
+        }
+
+    </style>
+    <script type="text/javascript" src="js/register.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!--/script-->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- header-section-starts -->
+
+
+<div class="about-header-banner">
+    <div class="container">
+        <div class="home">
+            <a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div class="header-top">
+            <div class="social-icons">
+                <i class="facebook"><img src="images/wechat.png" ></i>
+                <i class="twitter"><img src="images/qq.png" ></i>
+                <i class="googlepluse"><img src="images/sina.png" ></i>
+            </div>
+            <span class="menu"><img src="images/nav.png" alt=""/></span>
+            <div class="top-menu">
+                <ul>
+                    <nav class="cl-effect-13">
+                        <li><a href="course.html">课程分类</a></li>
+                        <li><a href="index.html">下载</a></li>
+                        <li><a class="scroll" href="#news">我的</a></li>
+                    </nav>
+                </ul>
+            </div>
+            <!-- script for menu -->
+            <script>
+                $( "span.menu" ).click(function() {
+                    $( ".top-menu ul" ).slideToggle( 300, function() {
+                        // Animation complete.
+                    });
+                });
+            </script>
+            <!-- //script for menu -->
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="banner-info text-center">
+            <h1><a href="index.html">css</a></h1>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="login" style="height: 300px" >
+    <form role="form" class="form-horizontal" >
+        <h2 class="text-center">登录</h2>
+        <div class="form-group">
+            <div class="col-xs-4 control-label">
+                <label for="user">用户名:</label>
+            </div>
+            <div class="col-xs-4">
+                <input type="text" name="txtName" class="form-control " placeholder="请输入用户名" id="user">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-4 control-label">
+                <label for="pwd" >密码:</label>
+            </div>
+            <div class="col-xs-4">
+                <input type="password" name="txtPwd" class="form-control " placeholder="请输入密码" id="pwd">
+            </div>
+        </div>
+        <div id="remember">
+            <input type="radio">请记住我
+        </div>
+        <div style="margin-top: 30px" >
+            <button type="submit"class="btn btn-success " id="loginBtn">登录</button>
+        </div>
+    </form>
+</div>
+<!-- footer-section -->
+<div class="footer">
+    <div class="container">
+        <div class="copyright text-center">
+            <p>
+                本站点所有权归属于<span class="glyphicon glyphicon-fire"></span>h5小分队
+                <span class="glyphicon glyphicon-fire"></span>团队提供综合支持</p>
+        </div>
+    </div>
+</div>
+<!-- footer-section -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+    });
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!---->
+</body>
+</html>
