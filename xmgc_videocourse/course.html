@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>课程页</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Gardening Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!--/script-->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- header-section-starts -->
+<div class="about-header-banner">
+    <div class="container">
+        <div class="home">
+            <a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div class="header-top">
+            <div class="social-icons">
+                <i class="facebook"><img src="images/wechat.png" ></i>
+                <i class="twitter"><img src="images/qq.png" ></i>
+                <i class="googlepluse"><img src="images/sina.png" ></i>
+            </div>
+            <span class="menu"><img src="images/nav.png" alt=""/></span>
+            <div class="top-menu">
+                <ul>
+                    <nav class="cl-effect-13">
+                        <li><a href="index.html">课程分类</a></li>
+                        <li><a href="index.html">下载</a></li>
+                        <li><a class="scroll" href="#news">我的</a></li>
+                        <li><a href="index.html">关于我们</a></li>
+                        <li><a href="index.html">视频</a></li>
+                    </nav>
+                </ul>
+            </div>
+            <!-- script for menu -->
+            <script>
+                $( "span.menu" ).click(function() {
+                    $( ".top-menu ul" ).slideToggle( 300, function() {
+                        // Animation complete.
+                    });
+                });
+            </script>
+            <!-- //script for menu -->
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="banner-info text-center">
+            <h1><a href="index.html">css</a></h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="items">
+        <div class="container">
+            <div class="col-md-3 item-1">
+                <img src="images/g1.jpg" alt="" />
+                <h3>课程一</h3>
+            </div>
+            <div class="col-md-3 item-1">
+                <img src="images/g1.jpg" alt="" />
+                <h3>课程二</h3>
+            </div>
+            <div class="col-md-3 item-1">
+                <img src="images/g1.jpg" alt="" />
+                <h3>课程三</h3>
+            </div>
+            <div class="col-md-3 item-1">
+                <img src="images/g1.jpg" alt="" />
+                <h3>课程四</h3>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</div>
+
+
+<!-- footer-section -->
+<div class="footer">
+    <div class="container">
+        <div class="copyright text-center">
+            <p>本站点所有权归属于<span class="glyphicon glyphicon-fire"></span>h5小分队<span class="glyphicon glyphicon-fire"></span>团队提供综合支持</p>
+        </div>
+    </div>
+</div>
+<!-- footer-section -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!---->
+</body>
+</html>
