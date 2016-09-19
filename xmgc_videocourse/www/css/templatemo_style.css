@@ -1,0 +1,146 @@
+
+
+html {
+    overflow: hidden;
+}
+body {
+    background: #455a64;
+    overflow: auto;
+    height: 100vh;
+}
+/***** Typography *****/
+body, p, a, th, td, li, dl, .form-control { font: normal normal 300 18px/2em 'Fira Sans';}
+b, strong, dt { font-weight: 400;}
+h1, h2, h3, h4, h5, h6 { line-height: 2em;}
+/***** Material Shadow *****/
+
+/***** Material Form Elements *****/
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+form .form-group { margin-top: 30px;}
+form input.form-control,
+form button.form-control,
+form textarea.form-control ,
+form select.form-control {
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #233842;
+    border-radius: 0px;
+    height: 45px;
+}
+form input.form-control:focus,
+form button.form-control:focus,
+form textarea.form-control:focus {
+    border-bottom-color: #c0c0c0;
+    box-shadow: none;
+}
+form button.form-control {
+    background-color: #275267;
+    transition: .5s;
+}
+form button.form-control[type=reset] { background-color: transparent;}
+form button.form-control:hover,
+form button.form-control:focus {
+    border-bottom-color: #275267;
+    background-color: #1c2d35;
+}
+form textarea.form-control { min-height: 120px;}
+form .input-group-addon { 
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #233842;
+    vertical-align: top;
+    border-radius: 0;
+    color: white;
+}
+form .input-group-addon i { padding-top:9px;color: #000;}
+form .checkbox input[type=checkbox] { margin-top: 12px;}
+
+
+/***** Contact *****/
+#login {
+    background: #455a64 url(../images/pattern_bg.png) fixed;
+    color: #fff;
+}
+#login header h1 { color: #fff;}
+#login p, #login a  {
+    line-height: 2.5em;
+    color: #fff;
+}
+#login form .form-group { margin-top: 30px;}
+#login form input.form-control,
+#login form button.form-control,
+#login form textarea.form-control ,
+#login form select.form-control { border-bottom: 3px solid #fff;color: #fff;}
+#login form input.form-control:focus,
+#login form button.form-control:focus,
+#login form textarea.form-control:focus { border-bottom-color: #275267;}
+#login form textarea.form-control { min-height: 120px;}
+#login form .input-group-addon { border-bottom: 3px solid #fff;}
+#login form .input-group-addon i { color: #fff;}
+#login .social {
+    margin: 0px auto 40px auto;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+#login .social li {
+    margin-left: 0;
+    width: 25%;
+}
+#login .social a {
+    margin: 50px auto 4px auto;
+    background-color: #fff;
+    border-radius: 50px;
+    padding-top: 15px;
+    font-size: 40px;
+    line-height: 40px;
+    transition: .5s;
+    display: block;
+    height: 70px;
+    color: #fff;
+    width: 70px;
+}
+#login .social a:hover {
+    transform: rotate(360deg);
+    color: #223741;
+}
+#login .social .social-facebook { background: #4a6fb5;}
+#login .social .social-twitter { background: #28a9e0;}
+#login .social .social-youtube { background: #f86d70;}
+#login .social .social-instagram { background: #cab9a9;}
+/***** Footer *****/
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .show-menu {right: 50px;}
+    nav.main-menu {right: 50px;}
+}
+@media (max-width: 991px) {
+    .show-menu {right: 30px;}
+    nav.main-menu {right: 30px;}
+}
+@media (max-width: 767px) {
+    #templatemo_download h2 {font-size: 70px;}
+    #templatemo_home h2 {font-size: 26px;}
+}
+@media (max-width: 400px) {
+    nav.main-menu {right: 10px;}
+    .show-menu {right: 10px;}
+    #login .social a {
+        padding: 18px;
+        font-size: 25px;
+        line-height: 20px;
+        height: 60px;
+        width: 60px;
+    }
+}
+@media screen and (max-width: 320px) {
+	p{font-size:x-small;}
+	}
+	@media screen and (max-width: 320px) {
+	#kong{display: none;}
+	}

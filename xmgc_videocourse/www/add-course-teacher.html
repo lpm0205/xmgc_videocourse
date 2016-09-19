@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>添加课程</title>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />-->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!--/script-->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+            });
+        });
+    </script>
+    <style type="text/css">
+        .rightlogin {
+            position: relative;
+            left: 140px;
+        }
+    </style>
+
+</head>
+<body>
+<!-- header-section-starts -->
+<div class="about-header-banner">
+    <div class="">
+        <div class="home">
+            <a href="homepage-teacher.html"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div class="header-top">
+            <div class="social-icons">
+                <i class="facebook"><img src="images/wechat.png"></i>
+                <i class="twitter"><img src="images/qq.png"></i>
+                <i class="googlepluse"><img src="images/sina.png"></i>
+            </div>
+            <span class="menu"><img src="images/nav.png" alt=""/></span>
+            <div class="top-menu">
+                <ul>
+                    <nav class="cl-effect-13">
+                        <li><a href="vertify-teacher.html">课程分类</a></li>
+                        <li><a href="add-course-teacher.html">发布</a></li>
+                        <li><a href="per-teacher.html">我的</a></li>
+                    </nav>
+                </ul>
+            </div>
+            <!-- script for menu -->
+            <script>
+                $("span.menu").click(function () {
+                    $(".top-menu ul").slideToggle(300, function () {
+                        // Animation complete.
+                    });
+                });
+            </script>
+            <!-- //script for menu -->
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="banner-info text-center">
+            <h1><a>上传课程</a></h1>
+        </div>
+    </div>
+</div>
+
+<div class="items">
+    <p><span style="font-size: 20px;font-weight: bold">请选择本次你所添加的课程种类:</span></p>
+        <table class="container" style="width: 80%;margin: 0px auto;margin-top: 10px">
+            <tr>
+                <td><input name="kc" type="radio" value="001" style="width: 25%;margin: 5px">HTML5</td>
+                <td><input name="kc" type="radio" value="002" style="width: 25%;margin: 5px">CSS</td>
+            </tr>
+            <tr>
+                <td><input name="kc" type="radio" value="003" style="width: 25%;margin: 5px">Jquery</td>
+                <td><input name="kc" type="radio" value="004" style="width: 25%;margin: 5px">Bootstrap</td>
+            </tr>
+            <tr>
+                <td><input name="kc" type="radio" value="005" style="width: 25%;margin: 5px">node.js</td>
+                <td><input name="kc" type="radio" value="008" style="width: 25%;margin: 5px">angular.js</td>
+            </tr>
+            <tr>
+                <td><input name="kc" type="radio" value="006" style="width: 25%;margin: 5px">mysql</td>
+                <td><input name="kc" type="radio" value="007" style="width: 25%;margin: 5px">php</td>
+            </tr>
+            <tr>
+                <td><input name="kc" type="radio" value="009" style="width: 25%;margin: 5px">react.js</td>
+                <td></td>
+            </tr>
+        </table>
+    <p><span style="font-size: 20px;font-weight: bold">请选择本次你所添加的课程难度:</span></p>
+        <table class="container" style="width: 80%;margin: 0px auto;margin-top: 10px">
+            <tr>
+                <td><input name="level" type="radio" value="primary" style="width: 25%;margin: 5px">初级</td>
+                <td><input name="level" type="radio" value="middle" style="width: 25%;margin: 5px">中级</td>
+                <td><input name="level" type="radio" value="advanced" style="width: 25%;margin: 5px">高级</td>
+            </tr>
+        </table>
+    <!--<input type="file" name="files" style="margin-top: 15px">-->
+    <!--<input type="submit" value="提交"  id="upload" class="btn btn-info" style="margin-top: 15px;margin-left: 40%">-->
+    <!--<div style="width:200px;margin:12px;background:gray;margin-left: 20%">-->
+        <!--<div style="background:green;width:0px">0%</div>-->
+    <!--</div>-->
+    <form role="form">
+        <div class="form-group">
+            <label for="cName">本次课程的名称</label>
+            <input  class="form-control" id="cName" >
+        </div>
+        <div class="form-group">
+            <label for="cNum">课时数总数</label>
+            <input  class="form-control" id="cNum" >
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+                <button  class="btn btn-default" id="upload" style="position: relative;top: -10px;">提交</button>
+                <!--<div style="width:200px;margin:12px;background:gray">-->
+                    <!--<div id='wancheng' style="background:green;width:0">0%</div>-->
+                <!--</div>-->
+                <!--<a id='wenjian' href=''>.....</a>-->
+            </label>
+        </div>
+    </form>
+</div>
+<!-- footer-section -->
+<div class="footer">
+    <div class="container">
+        <div class="copyright text-center">
+            <p>本站点所有权归属于<span class="glyphicon glyphicon-fire"></span>h5小分队<span
+                    class="glyphicon glyphicon-fire"></span>团队提供综合支持</p>
+        </div>
+    </div>
+</div>
+<!-- footer-section -->
+
+
+<div class="bottom-nav">
+    <div class="row">
+        <div class="col-xs-3">
+            <a href="homepage-teacher.html">
+                <center>
+                    <table>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-home" style="margin-top: 2px"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 10px;color: white">首页</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </a>
+        </div>
+        <div class="col-xs-4" style="margin: 0px;padding: 0px">
+            <a href="vertify-teacher.html">
+                <center>
+                    <table>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-tasks"
+                                      style="color:white;font-size:18px;margin-top: 2px;margin-left: 15px"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 10px;color: white">课程分类</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </a>
+        </div>
+        <div class="col-xs-2" style="margin: 0px;padding: 0px">
+            <a href="add-course-teacher.html">
+                <center>
+                    <table>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-download-alt"
+                                      style="color:white;font-size:18px;margin-top: 2px;"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 10px;color: white">发布</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </a>
+        </div>
+        <div class="col-xs-3" style="padding-left: 1px"><a href="per-teacher.html">
+            <center>
+                <table>
+                    <tr>
+                        <td><span class="glyphicon glyphicon-user"
+                                  style="color:white;font-size:18px;margin-top: 2px;"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-size: 10px;color: white">我的</span></td>
+                    </tr>
+                </table>
+            </center>
+        </a></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+    });
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+<script src="js/bootstrap.js"></script>
+<!--<script src="http://m.xmgc360.com/pie/web/js/common.js"></script>-->
+<script src="add-course-teacher.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+.box {
+    float: left;
+    border: 1px solid rgb(234, 234, 234);
+    padding: 6px;
+    margin: 0 4px 5px 8px;
+
+}
+#container img{
+                      width: 278px;
+                      height: 200px;
+}
+#container{margin-left: 15%;}
+@media screen and (max-width:480px) {
+    #container{
+        margin-left: -15px;
+    }
+}
+
+.al-left-con p {
+    margin-top: 10px;
+    color: #666;
+    font: 12px microsoft yahei;
+    line-height: 18px;
+    padding-left: 20px;
+
+}
+
+.al-left-con .al-p-con {
+    font: 700 16px microsoft yahei;
+    color: red;
+}
+
+.al-left-con .al-left-a {
+    /*width: 340px;*/
+    height: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+.al-left-con .al-left-at {
+    width: 278px;
+    height: 100px;
+    position: absolute;
+    display: none;
+    left: 5px;
+    bottom: 0;
+    background-color: darkred;
+}
+
+.al-left-con .al-left-at p {
+    color: #fff;
+}

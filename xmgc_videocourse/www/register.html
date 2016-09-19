@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="hhhwidth=device-width, initial-scale=1">
+    <title>注册界面</title>
+
+    <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <script type="text/javascript" src="js/register.js"></script>
+</head>
+<body>
+<section id="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <header class="template_header">
+                    <h1 class="text-center">Project workshop </h1>
+                </header>
+                <p class="text-center">
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><label for="user" ><i class=" glyphicon glyphicon-user"></i></label></div>
+                        <input type="text" name="name" class="form-control" id="user" placeholder="Name"  onfocus="fo1()" onblur="bl1()" >
+                        <div id="div01" ></div>
+                        <div id="nameSel" style="display: none; color: red;">&nbsp;用户名重复</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><label for="pwd"><i class="glyphicon glyphicon-lock"></i></label> </div>
+                        <input type="password" name="password" class="form-control" id="pwd" placeholder="password" onfocus="fo2()" onblur="bl2()">
+                        <div id="div02"  ></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><label for="pwd2"><i class="glyphicon glyphicon-lock"></i></label></div>
+                        <input type="password" name="again" class="form-control" id="pwd2" placeholder="password"  onfocus="fo3()" onblur="bl3()">
+                        <div id="div03"></div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><label for="uSchool"><i class="glyphicon glyphicon-home"></i></label></div>
+                        <input type="text" name="SchoolName" class="form-control" id="uSchool" placeholder="SchoolName">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><label for="uClass"><i class="glyphicon glyphicon-th-large"></i></label></div>
+                        <input type="text" name="ClassName" class="form-control" id="uClass" placeholder="ClassName">
+                    </div>
+                </div>
+                <div class="form-group row" >
+                    <div class="col-xs-6 control-label" >
+                        <label >用户类型:</label>
+                    </div>
+                    <div class=" col-xs-5">
+                        <input type="radio" name="uType" id="uType_1" value="1" checked> 学生
+                        <input type="radio" name="uType" id="uType_2" value="0">教师
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <a href="#"><div class="col-xs-6 col-xs-offset-6">
+                        <button type="button" class="form-control" id="zhuce"> 注册</button>
+                    </div></a>
+                </div>
+                <div class="form-group row">
+                    <a href="index.html"><div class="col-xs-6 col-xs-offset-6">
+                        <button type="button" class="form-control">返回</button>
+                    </div></a>
+                </div>
+
+
+            </form>
+
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="copyright text-center">
+                    <p>&copy;本站点所有权归属于<span class="fa fa-at"></span>h5小分队
+                        团队提供综合支持</p>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- Footer -->
+
+
+<!-- require plugins -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="register.js"></script>
+
+</body>
+</html>

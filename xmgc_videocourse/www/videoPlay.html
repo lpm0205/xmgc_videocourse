@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>课程页</title>
+    <!--<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>-->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Gardening Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+            });
+        });
+    </script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <script>
+        $(document).ready(function () {
+            var video = $('#video');
+            $("#play").click(function () {
+                video[0].play();
+            });
+            $("#pause").click(function () {
+                video[0].pause();
+            });
+            $("#go10").click(function () {
+                video[0].currentTime += 10;
+            });
+            $("#back10").click(function () {
+                video[0].currentTime -= 10;
+            });
+            $("#volume1").click(function () {
+                video[0].volume += 0.1;
+            });
+            $("#volume0").click(function () {
+                video[0].volume - +0.1;
+            });
+            $("#muted1").click(function () {
+                video[0].muted = true;
+            });
+            $("#muted0").click(function () {
+                video[0].muted = false;
+            });
+            $("#full").click(function () {
+                video[0].webkitEnterFullScreen();
+                video[0].mozRequestFullScreen();
+            });
+        });
+    </script>
+    <style>
+        #myVideo{background-color:black;}
+        #video{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);}
+    </style>
+</head>
+<body>
+<!-- header-section-starts -->
+
+<div id="myVideo">
+    <video id="video" src="video/ceshishipin.mp4" width="80%" height="10%" controls="controls"
+           poster="images/banner.png"></video>
+    <div class="row">
+        <div class="col-sm-4  col-sm-offset-4 col-md-6 col-md-6-offset-0 col-xs-12">
+            <button id="play" type="button" class="btn btn-default btn-xs">播放</button>
+            <button id="pause" type="button" class="btn btn-default btn-xs">暂停</button>
+            <!--<button id="go10" type="button" class="btn btn-default btn-xs">快进10秒</button>-->
+            <!--<button id="back10" type="button" class="btn btn-default btn-xs">快退10秒</button>-->
+            <button id="volume1" type="button" class="btn btn-default btn-xs">音量+</button>
+            <button id="volume0" type="button" class="btn btn-default btn-xs">音量-</button>
+            <button id="muted1" type="button" class="btn btn-default btn-xs">静音</button>
+            <button id="muted0" type="button" class="btn btn-default btn-xs">解除静音</button>
+            <button id="full" type="button" class="btn btn-default btn-xs">全屏</button>
+        </div>
+    </div>
+</div>
+<!-- header-section-ends -->
+<div class="footer">
+    <div class="container">
+        <div class="copyright text-center">
+            <p>本站点所有权归属于<span class="glyphicon glyphicon-fire"></span>h5小分队<span
+                    class="glyphicon glyphicon-fire"></span>团队提供综合支持</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+    });
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<div class="bottom-nav">
+    <div class="row">
+        <div class="col-xs-3">
+            <a href="homepage-student.html">
+                <center>
+                    <table>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-home" style="margin-top: 2px"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 10px;color: white">首页</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </a>
+        </div>
+        <div class="col-xs-4" style="margin: 0px;padding: 0px">
+            <a href="vertify-student.html">
+                <center>
+                    <table>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-tasks" style="color:white;font-size:18px;margin-top: 2px;margin-left: 15px"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 10px;color: white">课程分类</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </a>
+        </div>
+        <div class="col-xs-2" style="margin: 0px;padding: 0px">
+            <a href="download-student.html">
+                <center>
+                    <table>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-download-alt" style="color:white;font-size:18px;margin-top: 2px;"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 10px;color: white">下载</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </a>
+        </div>
+        <div class="col-xs-3" style="padding-left: 1px"><a href="Per-student.html">
+            <center>
+                <table>
+                    <tr>
+                        <td><span class="glyphicon glyphicon-user" style="color:white;font-size:18px;margin-top: 2px;"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-size: 10px;color: white">我的</span></td>
+                    </tr>
+                </table>
+            </center>
+        </a></div>
+    </div>
+</div>
+</body>
+</html>
