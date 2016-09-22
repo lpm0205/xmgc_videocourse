@@ -7,23 +7,32 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Custom Theme files -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Custom Theme files -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <!--/script-->
     <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event){
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
                 event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
             });
         });
     </script>
-
+    <style>
+        .hidediv {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <!-- header-section-starts -->
@@ -34,9 +43,9 @@
         </div>
         <div class="header-top">
             <div class="social-icons">
-                <i class="facebook"><img src="images/wechat.png" ></i>
-                <i class="twitter"><img src="images/qq.png" ></i>
-                <i class="googlepluse"><img src="images/sina.png" ></i>
+                <i class="facebook"><img src="images/wechat.png"></i>
+                <i class="twitter"><img src="images/qq.png"></i>
+                <i class="googlepluse"><img src="images/sina.png"></i>
             </div>
             <span class="menu"><img src="images/nav.png" alt=""/></span>
             <div class="top-menu">
@@ -44,14 +53,14 @@
                     <nav class="cl-effect-13">
                         <li><a href="vertify-teacher.html">课程分类</a></li>
                         <li><a href="add-course-teacher.html">发布</a></li>
-                        <li><a  href="per-teacher.html">我的</a></li>
+                        <li><a href="per-teacher.html">我的</a></li>
                     </nav>
                 </ul>
             </div>
             <!-- script for menu -->
             <script>
-                $( "span.menu" ).click(function() {
-                    $( ".top-menu ul" ).slideToggle( 300, function() {
+                $("span.menu").click(function () {
+                    $(".top-menu ul").slideToggle(300, function () {
                         // Animation complete.
                     });
                 });
@@ -62,7 +71,7 @@
         </div>
         <div class="clearfix"></div>
         <div class="banner-info text-center">
-            <h1><a >项目工场</a></h1>
+            <h1><a>项目工场</a></h1>
         </div>
         <div class="header-bottom-grids text-center">
             <div class="header-bottom-grid1">
@@ -88,45 +97,50 @@
 
 <div class="items">
     <div class="container">
-        <div class="col-md-4 item-1">
-            <img src="images/banner.png" alt="" />
+        <div class="col-md-6 item-1">
+            <img src="images/banner.png" alt=""/>
             <h3>课程</h3>
         </div>
-        <div class="col-md-4 item-2">
-            <img src="images/banner.png" alt="" />
+        <div class="col-md-6 item-2">
+            <img src="images/banner.png" alt=""/>
             <h3>视频</h3>
-        </div>
-        <div class="col-md-4 item-3 text-center">
-            <h4>啦啦啦</h4>
-            <p>你猜我是一个什么模块啊</p>
         </div>
         <div class="clearfix"></div>
     </div>
+    <div style="background-color:#2a85a0;margin-top: 5px;height: 30px"><h4
+            style="line-height: 8px;color: white;font-weight: bold">视频推荐</h4></div>
+
+    <div id="mainpage" class="hidediv">
+        <div style="margin-top: 5px">
+            <div><img src="images/HTML5.jpg" class="col-xs-6" id="cImage"></div>
+            <div class="col-xs-5" style="margin-top: 15px;">
+                <h4 id="cName" style="font-weight: bold;font-family: 楷体">课程名</h4>
+                <p id="cNum" class="glyphicon glyphicon-stats">&nbsp;点击次数</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="copy" style="margin-bottom: 35px"></div>
+    <script src="homepage.js"></script>
 </div>
 <!-- footer-section -->
 <div class="footer">
     <div class="container">
         <div class="copyright text-center">
-            <p>本站点所有权归属于<span class="glyphicon glyphicon-fire"></span>h5小分队<span class="glyphicon glyphicon-fire"></span>团队提供综合支持</p>
+            <p>本站点所有权归属于<span class="glyphicon glyphicon-fire"></span>h5小分队<span
+                    class="glyphicon glyphicon-fire"></span>团队提供综合支持</p>
         </div>
     </div>
 </div>
 <!-- footer-section -->
 <script type="text/javascript">
-    $(document).ready(function() {
-        $().UItoTop({ easingType: 'easeOutQuart' });
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
     });
 </script>
 <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!---->
-<!--<div class="bottom-nav">-->
-    <!--<div class="row">-->
-        <!--<div class="col-xs-3" ><a href="homepage-teacher.html" ><center><span>首页</span></center></a></div>-->
-        <!--<div class="col-xs-4" style="margin: 0px;padding: 0px"><a href="vertify-student.html" ><center><span>课程分类</span></center></a></div>-->
-        <!--<div class="col-xs-2" style="margin: 0px;padding: 0px"><a href="add-course-teacher.html" ><center><span>发布</span></center></a></div>-->
-        <!--<div class="col-xs-3" style="padding-left: 1px"><a href="per-teacher.html" ><center><span>我的</span></center></a></div>-->
-    <!--</div>-->
-<!--</div>-->
+
 <div class="bottom-nav">
     <div class="row">
         <div class="col-xs-3">
@@ -148,7 +162,8 @@
                 <center>
                     <table>
                         <tr>
-                            <td><span class="glyphicon glyphicon-tasks" style="color:white;font-size:18px;margin-top: 2px;margin-left: 15px"></span></td>
+                            <td><span class="glyphicon glyphicon-tasks"
+                                      style="color:white;font-size:18px;margin-top: 2px;margin-left: 15px"></span></td>
                         </tr>
                         <tr>
                             <td><span style="font-size: 10px;color: white">课程分类</span></td>
@@ -162,7 +177,8 @@
                 <center>
                     <table>
                         <tr>
-                            <td><span class="glyphicon glyphicon-download-alt" style="color:white;font-size:18px;margin-top: 2px;"></span></td>
+                            <td><span class="glyphicon glyphicon-download-alt"
+                                      style="color:white;font-size:18px;margin-top: 2px;"></span></td>
                         </tr>
                         <tr>
                             <td><span style="font-size: 10px;color: white">发布</span></td>
@@ -175,7 +191,8 @@
             <center>
                 <table>
                     <tr>
-                        <td><span class="glyphicon glyphicon-user" style="color:white;font-size:18px;margin-top: 2px;"></span></td>
+                        <td><span class="glyphicon glyphicon-user"
+                                  style="color:white;font-size:18px;margin-top: 2px;"></span></td>
                     </tr>
                     <tr>
                         <td><span style="font-size: 10px;color: white">我的</span></td>

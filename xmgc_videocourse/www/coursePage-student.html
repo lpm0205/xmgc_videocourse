@@ -12,8 +12,6 @@
     <!-- Custom Theme files -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Gardening Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
@@ -105,30 +103,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
                     <div class="bs-docs-example">
                         <table class="table table-hover">
-                            <tr>
-                                <td>1</td>
-                                <td>c</td>
+
+                            <tr  id="mainpage"  >
+                                <td id="smcId">课程Id</td>
+                                <td id="smcName">课程名称</td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><a href="videoPlay.html">微课名称</a></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td><a href="videoPlay.html">微课名称</a></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td><a href="videoPlay.html">微课名称</a></td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td><a href="videoPlay.html">微课名称</a></td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td><a href="videoPlay.html">微课名称</a></td>
-                            </tr>
+
+                            <tbody id="copy"  >
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -163,27 +145,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- footer-section -->
 <script type="text/javascript">
     $(document).ready(function() {
-        /*
-         var defaults = {
-         containerID: 'toTop', // fading element id
-         containerHoverID: 'toTopHover', // fading element hover id
-         scrollSpeed: 1200,
-         easingType: 'linear'
-         };
-         */
         $().UItoTop({ easingType: 'easeOutQuart' });
     });
 </script>
 <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!---->
-<!--<div class="bottom-nav">-->
-    <!--<div class="row">-->
-        <!--<div class="col-xs-3" ><a href="homepage-student.html" ><center><span>首页</span></center></a></div>-->
-        <!--<div class="col-xs-4" style="margin: 0px;padding: 0px"><a href="vertify-student.html" ><center><span>课程分类</span></center></a></div>-->
-        <!--<div class="col-xs-2" style="margin: 0px;padding: 0px"><a href="download-student.html" ><center><span>下载</span></center></a></div>-->
-        <!--<div class="col-xs-3" style="padding-left: 1px"><a href="Per-student.html" ><center><span>我的</span></center></a></div>-->
-    <!--</div>-->
-<!--</div>-->
 <div class="bottom-nav">
     <div class="row">
         <div class="col-xs-3">
@@ -242,5 +207,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </a></div>
     </div>
 </div>
+<script src="coursepage.js"></script>
 </body>
 </html>

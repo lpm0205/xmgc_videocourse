@@ -24,7 +24,7 @@ $(function () {
     var str = "";
     for (var i = 0; i < json.length; i++) {
         //                        str += '<div class="box"><a href="#"><img src="' + json[i].src + '" alt=""/></a></div>&nbsp;&nbsp;&nbsp;&nbsp;';
-        str += '<div class="box"><a href="videoPlay.html"><img src="' + json[i].src + '" alt=""/>'
+        str += '<div class="box"><a href="coursepage-student.html"><img src="' + json[i].src + '" alt=""/>'
             + '<div class="al-left-con">'
             + '<a href="javascript:;" class="al-left-a">'
             + '<p>'+json[i].title+'</p>'

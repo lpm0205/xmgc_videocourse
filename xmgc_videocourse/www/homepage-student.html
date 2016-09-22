@@ -11,8 +11,6 @@
     <!-- Custom Theme files -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content="Gardening Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
     <script type="application/x-javascript"> addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
     }, false);
@@ -30,14 +28,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
-
+    <style>
+        .hidediv {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
 <div class="header-banner">
     <div class="">
         <div class="home">
-            <a href="homepage-student.html"><span class="glyphicon glyphicon-home"></span></a>
+            <a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
         </div>
         <div class="header-top">
             <div class="social-icons">
@@ -69,7 +71,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="clearfix"></div>
         <div class="banner-info text-center">
-            <h1><a href="homepage-student.html">项目工场</a></h1>
+            <h1><a href="index.html">项目工场</a></h1>
         </div>
         <div class="header-bottom-grids text-center">
             <div class="header-bottom-grid1">
@@ -95,20 +97,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <div class="items">
     <div class="container">
-        <div class="col-md-4 item-1">
+        <div class="col-md-6 item-1">
             <img src="images/banner.png" alt=""/>
             <h3>课程</h3>
         </div>
-        <div class="col-md-4 item-2">
+        <div class="col-md-6 item-2">
             <img src="images/banner.png" alt=""/>
             <h3>视频</h3>
         </div>
-        <div class="col-md-4 item-3 text-center">
-            <h4>啦啦啦</h4>
-            <p>你猜我是一个什么模块啊</p>
+        <div class="clearfix"></div>
+    </div>
+    <div style="background-color:#2a85a0;margin-top: 5px;height: 30px"><h4
+            style="line-height: 8px;color: white;font-weight: bold">视频推荐</h4></div>
+
+    <div id="mainpage" class="hidediv">
+        <div style="margin-top: 5px">
+            <div><img src="images/HTML5.jpg" class="col-xs-6" id="cImage"></div>
+            <div class="col-xs-5" style="margin-top: 15px;">
+                <h4 id="cName" style="font-weight: bold;font-family: 楷体">课程名</h4>
+                <p id="cNum" class="glyphicon glyphicon-stats">&nbsp;点击次数</p>
+            </div>
         </div>
         <div class="clearfix"></div>
     </div>
+
+    <div id="copy" style="margin-bottom: 35px"></div>
+    <script src="homepage.js"></script>
 </div>
 
 <div class="footer">
@@ -125,12 +139,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $().UItoTop({easingType: 'easeOutQuart'});
     });
 </script>
-<!--<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>-->
-
 <div class="bottom-nav">
     <div class="row">
         <div class="col-xs-3">
-            <a href="homepage-student.html">
+            <a href="index.html">
                 <center>
                     <table>
                         <tr>
@@ -148,7 +160,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <center>
                     <table>
                         <tr>
-                            <td><span class="glyphicon glyphicon-tasks" style="color:white;font-size:18px;margin-top: 2px;margin-left: 15px"></span></td>
+                            <td><span class="glyphicon glyphicon-tasks"
+                                      style="color:white;font-size:18px;margin-top: 2px;margin-left: 15px"></span></td>
                         </tr>
                         <tr>
                             <td><span style="font-size: 10px;color: white">课程分类</span></td>
@@ -159,23 +172,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="col-xs-2" style="margin: 0px;padding: 0px">
             <a href="download-student.html">
-            <center>
-                <table>
-                    <tr>
-                        <td><span class="glyphicon glyphicon-download-alt" style="color:white;font-size:18px;margin-top: 2px;"></span></td>
-                    </tr>
-                    <tr>
-                        <td><span style="font-size: 10px;color: white">下载</span></td>
-                    </tr>
-                </table>
-            </center>
-        </a>
+                <center>
+                    <table>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-download-alt"
+                                      style="color:white;font-size:18px;margin-top: 2px;"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 10px;color: white">下载</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </a>
         </div>
         <div class="col-xs-3" style="padding-left: 1px"><a href="Per-student.html">
             <center>
                 <table>
                     <tr>
-                        <td><span class="glyphicon glyphicon-user" style="color:white;font-size:18px;margin-top: 2px;"></span></td>
+                        <td><span class="glyphicon glyphicon-user"
+                                  style="color:white;font-size:18px;margin-top: 2px;"></span></td>
                     </tr>
                     <tr>
                         <td><span style="font-size: 10px;color: white">我的</span></td>
