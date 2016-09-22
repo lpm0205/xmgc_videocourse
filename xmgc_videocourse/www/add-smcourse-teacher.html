@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>添加课程</title>
+
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <style>
+        .mydiv{
+            /*width: 25%;*/
+            /*height: 280px;*/
+            /*margin: 0px auto;*/
+            /*margin-bottom:20px;*/
+            /*border:1px solid #96C2F1;*/
+            background-color: #EFF7FF
+        }
+
+        /*#mydiv1,#mydiv2,#mydiv3,#mydiv4{*/
+            /*width: 25%;*/
+            /*float:left;*/
+        /*}*/
+
+        @media screen and (max-width:768px){
+           .mydiv{
+                display:block;
+                width:50%;  }
+        }
+        @media screen and (max-width:480px){
+            .mydiv{
+                display:block;
+                width:100%;  }
+        }
+    </style>
+</head>
+<body onmousedown="show_element(event)">
+<div class="about-header-banner">
+    <div class="">
+        <div class="home">
+            <a href="homepage-teacher.html"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div class="header-top">
+            <div class="social-icons">
+                <i class="facebook"><img src="images/wechat.png"></i>
+                <i class="twitter"><img src="images/qq.png"></i>
+                <i class="googlepluse"><img src="images/sina.png"></i>
+            </div>
+            <span class="menu"><img src="images/nav.png" alt=""/></span>
+            <div class="top-menu">
+                <ul>
+                    <nav class="cl-effect-13">
+                        <li><a href="vertify-teacher.html">课程分类</a></li>
+                        <li><a href="add-course-teacher.html">发布</a></li>
+                        <li><a href="per-teacher.html">我的</a></li>
+                    </nav>
+                </ul>
+            </div>
+            <!-- script for menu -->
+            <script>
+                $("span.menu").click(function () {
+                    $(".top-menu ul").slideToggle(300, function () {
+                        // Animation complete.
+                    });
+                });
+            </script>
+            <!-- //script for menu -->
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="banner-info text-center">
+            <h1><a>上传微课</a></h1>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="mainpage" class="hidediv mydiv" >
+        <div style="padding:10px; margin-bottom: 55px;">
+
+            微编号：<input type="text" id="smcId0" ><br/>
+            <br/>
+            微课名：<input type="text" id="smcName0" ><br/>
+            <br/>
+            <div class="form-group">
+                    <div class="btn btn-default" id="file0" style="position: relative;top: -10px;" onclick="uploadUrl()">选择你所上传的微课</div>
+            <div style="width:200px;margin:12px;background:gray">
+                    <div id='wancheng0' style="background:green;width:0">0%</div>
+            </div>
+                    <div id='wenjian0' ></div>
+                <div  class="btn btn-default" id="upload0"  onclick="uploadSmcourse()">提交</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="copy"></div>
+    <!--<div id="mydiv2"  >-->
+        <!--<div style="padding:10px;">-->
+
+            <!--<h1>2</h1>-->
+            <!--微课名：<input type="text" name="name" ><br><br>-->
+            <!--<input type="file" value="文件"><br>-->
+            <!--<input type="submit" value="提交" class="btn btn-info" style="margin-top: 15px;">-->
+
+        <!--</div>-->
+
+    <!--</div>-->
+    <!--<div id="mydiv3"  >-->
+        <!--<div style="padding:10px;">-->
+
+            <!--<h1>3</h1>-->
+            <!--微课名：<input type="text" name="name" ><br><br>-->
+            <!--<input type="file" value="文件"><br>-->
+            <!--<input type="submit" value="提交" class="btn btn-info" style="margin-top: 15px;">-->
+
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div id="mydiv4"  >-->
+        <!--<div style="padding:10px;">-->
+
+            <!--<h1>4</h1>-->
+            <!--微课名：<input type="text" name="name" ><br><br>-->
+            <!--<input type="file" value="文件"><br>-->
+            <!--<input type="submit" value="提交" class="btn btn-info" style="margin-top: 15px;">-->
+
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="copyright text-center">
+            <p>本站点所有权归属于<span class="glyphicon glyphicon-fire"></span>h5小分队<span
+                    class="glyphicon glyphicon-fire"></span>团队提供综合支持</p>
+        </div>
+    </div>
+</div>
+<div class="bottom-nav">
+    <div class="row">
+        <div class="col-xs-3">
+            <a href="homepage-teacher.html">
+                <center>
+                    <table>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-home" style="margin-top: 2px"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 10px;color: white">首页</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </a>
+        </div>
+        <div class="col-xs-4" style="margin: 0px;padding: 0px">
+            <a href="vertify-teacher.html">
+                <center>
+                    <table>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-tasks"
+                                      style="color:white;font-size:18px;margin-top: 2px;margin-left: 15px"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 10px;color: white">课程分类</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </a>
+        </div>
+        <div class="col-xs-2" style="margin: 0px;padding: 0px">
+            <a href="add-course-teacher.html">
+                <center>
+                    <table>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-download-alt"
+                                      style="color:white;font-size:18px;margin-top: 2px;"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 10px;color: white">发布</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </a>
+        </div>
+        <div class="col-xs-3" style="padding-left: 1px"><a href="per-teacher.html">
+            <center>
+                <table>
+                    <tr>
+                        <td><span class="glyphicon glyphicon-user"
+                                  style="color:white;font-size:18px;margin-top: 2px;"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-size: 10px;color: white">我的</span></td>
+                    </tr>
+                </table>
+            </center>
+        </a></div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="http://m.xmgc360.com/pie/web/js/common.js"></script>
+<script src="add-smcourse-teacher.js"></script>
+</body>
+</html>
